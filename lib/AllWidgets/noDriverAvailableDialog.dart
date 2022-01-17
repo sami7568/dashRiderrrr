@@ -36,7 +36,7 @@ class NoDriverAvailableDialog extends StatelessWidget {
                         Navigator.pop(context);
                       },
                       style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(Colors.blue),
+                        backgroundColor: MaterialStateProperty.all(Color(0xff00ACA4)),
                       ),
                       child:Padding(
                         padding: EdgeInsets.all(17.0),

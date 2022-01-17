@@ -5,7 +5,6 @@ class GeoFireAssistants{
   static List<NearbyAvailableDrivers> nearbyAvailableDriversList = [];
 
   static void removeDriverFromList(String key){
-
     int index=nearbyAvailableDriversList.indexWhere((element) => element.key==key);
     nearbyAvailableDriversList.remove(index);
   }

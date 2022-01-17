@@ -81,6 +81,8 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
   @override
   void initState() {
     // TODO: implement initState
+
+    locatePosition();
     super.initState();
     AssistantMethods.getCurrentOnlineUserInfo();
   }
@@ -415,7 +417,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     craeateIconMarker();
-    seclocatePosition();
+   // seclocatePosition();
     return Scaffold(
       key: scaffoldKey,
       //drawer of app
@@ -832,8 +834,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
                             carRideType = "mvp";
                           });
                           displayRequestRideContainer();
-                          availableDrivers =
-                              GeoFireAssistants.nearbyAvailableDriversList;
+                          availableDrivers = GeoFireAssistants.nearbyAvailableDriversList;
                           searchNearestDriver();
                         },
                         child: Container(
