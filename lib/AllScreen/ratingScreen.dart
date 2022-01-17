@@ -100,7 +100,7 @@ class _RatingScreenState extends State<RatingScreen> {
                     });
                     Navigator.pop(context);
                   },
-                  color: Colors.deepPurple,
+                  color: Color(0xff00ACAA),
                   child: Padding(
                     padding: EdgeInsets.all(17.0),
                     child: Row(

@@ -876,7 +876,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
                                             const SizedBox(width: 20,),
                                             const Icon(Icons.watch_later_outlined),
                                               SizedBox(width: 10,),
-                                              Text(tripDirectionDetails==null?"0 mins": "${(tripDirectionDetails!.durationValue!/60).toInt()}", style: TextStyle(fontFamily: "Brand Bolt"),
+                                              Text(tripDirectionDetails==null?"0 mins": "${(tripDirectionDetails!.durationValue!/60).toInt()}"+" mins", style: TextStyle(fontFamily: "Brand Bolt"),
                                             )
                                           ],)
                                         ],
